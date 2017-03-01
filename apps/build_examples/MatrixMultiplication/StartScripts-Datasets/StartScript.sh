@@ -4,7 +4,7 @@ matpath1="a1"
 matpath2="a2"
 matsize=300
 iterrounds=1000
-outputpath="./out3"
+outputpath="out3"
 ispartitioned=true
 cd $MAT_HOME/StartScripts-Datasets
 python CreateMatrix.py -m $matpath1 -n $matpath2 -s $matsize  
