@@ -1,0 +1,170 @@
+// class version 52.0 (52)
+// access flags 0x21
+public class edu/hku/cs/Hello implements edu/columbia/cs/psl/phosphor/struct/TaintedWithIntTag  {
+
+
+  @Ledu/columbia/cs/psl/phosphor/runtime/TaintInstrumented;() // invisible
+  // compiled from: Hello.java
+
+  // access flags 0x1
+  public <init>(Ledu/columbia/cs/psl/phosphor/runtime/UninstrumentedTaintSentinel;)V
+   L0
+   L1
+    LINENUMBER 6 L1
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    RETURN
+   L2
+    LOCALVARIABLE this Ledu/hku/cs/Hello; L1 L2 0
+   L3
+    MAXSTACK = 1
+    MAXLOCALS = 2
+
+  // access flags 0x1
+  public InstThis$$PHOSPHORTAGGED(IIIILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+   L0
+   L1
+   L2
+   L3
+    LINENUMBER 9 L3
+    ILOAD 1
+    ILOAD 2
+    ICONST_0
+    ICONST_1
+    ALOAD 5
+    INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Tainter.taintedInt$$PHOSPHORTAGGED (IIIILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+    DUP
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.taint : I
+    SWAP
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    ILOAD 3
+    ILOAD 4
+    ICONST_0
+    ICONST_2
+    ALOAD 5
+    INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Tainter.taintedInt$$PHOSPHORTAGGED (IIIILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+    DUP
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.taint : I
+    SWAP
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    SWAP
+    POP
+   L4
+    ISTORE 6
+   L5
+    ISTORE 7
+    POP
+    ILOAD 7
+    ILOAD 6
+   L6
+   L7
+    INVOKESTATIC edu/hku/cs/Rating.getCombined$$PHOSPHORUNTAGGED (II)I
+    ICONST_0
+    SWAP
+    ALOAD 5
+    INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Tainter.getTaint$$PHOSPHORTAGGED (IILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+    DUP
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.taint : I
+    SWAP
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    ALOAD 5
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    ALOAD 5
+    SWAP
+    PUTFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.taint : I
+    ALOAD 5
+    ARETURN
+   L8
+    LOCALVARIABLE this Ledu/hku/cs/Hello; L3 L8 0
+   L9
+    LOCALVARIABLE phosphorShadowLV0 I L4 L6 6
+    LOCALVARIABLE phosphorShadowLV1 I L5 L7 7
+    LOCALVARIABLE a_TAINT I L3 L8 1
+    LOCALVARIABLE a I L3 L8 2
+    LOCALVARIABLE b_TAINT I L3 L8 3
+    LOCALVARIABLE b I L3 L8 4
+    LOCALVARIABLE PHOSPHORPREALLOCRETURNHAHA Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag; L3 L8 5
+    MAXSTACK = 7
+    MAXLOCALS = 8
+
+  // access flags 0x2
+  private add$$PHOSPHORUNTAGGED(II)I
+   L0
+   L1
+    NEW edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag
+    DUP
+    INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.<init> ()V
+    ASTORE 3
+   L2
+    LINENUMBER 12 L2
+    ILOAD 1
+    ICONST_1
+   L3
+    ISTORE 4
+   L4
+    ISTORE 5
+    ICONST_0
+    ILOAD 5
+   L5
+    ICONST_0
+    ILOAD 4
+   L6
+    ALOAD 3
+    INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Tainter.taintedInt$$PHOSPHORTAGGED (IIIILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    ILOAD 2
+    ICONST_2
+    ISTORE 4
+    ISTORE 5
+    ICONST_0
+    ILOAD 5
+   L7
+    ICONST_0
+    ILOAD 4
+   L8
+    ALOAD 3
+    INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Tainter.taintedInt$$PHOSPHORTAGGED (IIIILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    INVOKESTATIC edu/hku/cs/Rating.getCombined$$PHOSPHORUNTAGGED (II)I
+    ISTORE 4
+    ICONST_0
+    ILOAD 4
+   L9
+    ALOAD 3
+    INVOKESTATIC edu/columbia/cs/psl/phosphor/runtime/Tainter.getTaint$$PHOSPHORTAGGED (IILedu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;)Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag;
+    GETFIELD edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.val : I
+    IRETURN
+   L10
+    LOCALVARIABLE this Ledu/hku/cs/Hello; L2 L10 0
+   L11
+    LOCALVARIABLE phosphorShadowLV2 I L4 L7 5
+    LOCALVARIABLE phosphorReturnPreAlloc0 Ledu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag; L1 L11 3
+    LOCALVARIABLE phosphorShadowLV1 I L3 L9 4
+    LOCALVARIABLE a I L2 L10 1
+    LOCALVARIABLE b I L2 L10 2
+    MAXSTACK = 6
+    MAXLOCALS = 6
+
+  // access flags 0x9
+  public static main$$PHOSPHORUNTAGGED([Ljava/lang/String;)V
+   L0
+   L1
+    NEW edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag
+    DUP
+    INVOKESPECIAL edu/columbia/cs/psl/phosphor/struct/TaintedIntWithIntTag.<init> ()V
+    ASTORE 1
+   L2
+    LINENUMBER 16 L2
+    NEW edu/hku/cs/Hello
+    DUP
+    ACONST_NULL
+    INVOKESPECIAL edu/hku/cs/Hello.<init> (Ledu/columbia/cs/psl/phosphor/runtime/UninstrumentedTaintSentinel;)V
+    ASTORE 2
+   L3
+    LINENUMBER 17 L3
+    LDC "jj"
+    ASTORE 3
+   L4
+    LINENUMBER 18 L4
+    ALOAD 3
